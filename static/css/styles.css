@@ -1,0 +1,237 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+.header2 {
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    position: relative;
+    overflow: hidden;
+    /*border: 2px solid black;  Borde negro */
+    border-radius: 10px; /* Esquinas redondeadas opcionales */
+}
+header {
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    position: relative;
+    overflow: hidden;
+    /*border: 2px solid black;  Borde negro */
+    border-radius: 10px; /* Esquinas redondeadas opcionales */
+}
+
+header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, #4a90e2, #734ae2, #4ae2a5, #e24a92);
+    background-size: 300% 300%;
+    animation: moveBackground 8s ease-in-out infinite;
+    z-index: -1;
+    opacity: 0.8;
+}
+
+@keyframes moveBackground {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.profile img {
+    width: 150px;
+    height: 200px;
+    border-radius: 20%;
+    margin-bottom: 1rem;
+    /*border: 3px solid black;  Borde negro */
+
+}
+
+/* main {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+h2 {
+    color: #4a90e2;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    padding: 0.5rem 0;
+}
+
+.contact a {
+    color: #4a90e2;
+    text-decoration: none;
+} */
+
+main {
+    max-width: 800px; /* Ancho máximo */
+    margin: 20px auto; /* Centramos el contenido */
+    padding: 20px; /* Espacio interno */
+    background-color: white; /* Fondo blanco */
+    border-radius: 10px; /* Esquinas redondeadas */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+h2 {
+    color: #4a90e2; /* Color llamativo para encabezados */
+    border-bottom: 2px solid #4a90e2; /* Línea debajo de los encabezados */
+    padding-bottom: 10px; /* Espacio debajo del texto */
+}
+
+ul {
+    list-style-type: none; /* Quitamos los puntos de la lista */
+    padding: 0; /* Quitamos el padding */
+}
+
+li {
+    margin: 10px 0; /* Espaciado entre elementos de la lista */
+    padding: 10px; /* Espacio interno */
+    background-color: #e8f4fd; /* Fondo suave para los items de la lista */
+    border-left: 4px solid #4a90e2; /* Línea a la izquierda */
+}
+
+.contact p {
+    margin: 5px 0; /* Espacio entre líneas */
+}
+
+.contact a {
+    color: #4a90e2; /* Color del enlace */
+    text-decoration: none; /* Sin subrayado */
+}
+
+.contact a:hover {
+    text-decoration: underline; /* Subrayado al pasar el mouse */
+}
+
+.modal {
+    display: none; /* Ocultar el modal por defecto */
+    position: fixed; /* Posicionarlo en la pantalla */
+    z-index: 1; /* Asegurarse de que esté en la parte superior */
+    left: 0;
+    top: 0;
+    width: 100%; /* Ancho completo */
+    height: 100%; /* Alto completo */
+    overflow: auto; /* Habilitar scroll si es necesario */
+    background-color: rgb(0,0,0); /* Color de fondo */
+    background-color: rgba(0,0,0,0.4); /* Fondo oscuro con opacidad */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* Margen superior e inferior */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Ancho del contenido */
+}
+
+.close {
+    color: #aaa;
+    float: right; /* Alinear a la derecha */
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black; /* Cambiar color al pasar el mouse */
+    text-decoration: none;
+    cursor: pointer; /* Cambiar cursor a mano */
+}
+
+.modal-trigger {
+    cursor: pointer; /* Cambia el cursor a una mano */
+}
+
+.skills {
+    margin: 2rem 0; /* Margen superior e inferior */
+}
+
+.skills h2 {
+    font-size: 2rem; /* Tamaño de la cabecera */
+    margin-bottom: 1rem; /* Espacio debajo del título */
+}
+
+.skills ul {
+    list-style-type: none; /* Eliminar los puntos de la lista */
+    padding: 0; /* Sin padding */
+}
+
+.skills li {
+    background-color: #f0f0f0; /* Fondo claro para cada habilidad */
+    background: linear-gradient(45deg, #abcff8, #b6a0f3, #a9f5d6, #fca5cd);
+    border-radius: 5px; /* Bordes redondeados */
+    margin-bottom: 1rem; /* Espacio entre elementos */
+    padding: 1rem; /* Espacio interno */
+}
+
+.contact {
+    margin: 2rem 0; /* Espaciado arriba y abajo */
+}
+
+.contact h2 {
+    font-size: 2rem; /* Tamaño del título */
+    margin-bottom: 1rem; /* Espacio debajo del título */
+}
+
+.contact-methods {
+    display: flex; /* Utiliza flexbox para disposición en línea */
+    flex-wrap: wrap; /* Permite que los elementos se muevan a la siguiente línea si no hay espacio */
+    justify-content: space-between; /* Espacio entre los elementos */
+}
+
+.contact-item {
+    flex: 1; /* Cada ítem ocupa el mismo espacio */
+    min-width: 200px; /* Ancho mínimo para cada ítem */
+    margin: 0.5rem; /* Espaciado entre ítems */
+    text-align: center; /* Centra el texto */
+}
+
+.contact-icon {
+    width: 50px; /* Ajusta el tamaño de las imágenes */
+    height: 50px; /* Ajusta el tamaño de las imágenes */
+    display: block; /* Hace que la imagen ocupe el espacio completo del contenedor */
+    margin: 0 auto; /* Centra la imagen */
+}
+
+.download-link {
+    display: flex; /* Usa flexbox para alinear ícono y texto */
+    align-items: center; /* Centra verticalmente el ícono y el texto */
+    text-decoration: none; /* Sin subrayado */
+    color: #ffffff; /* Color del texto */
+}
+
+.download-link img {
+    width: 20px; /* Ajusta el tamaño del ícono */
+    height: auto; /* Mantiene la proporción del ícono */
+    margin-right: 8px; /* Espaciado entre el ícono y el texto */
+}
+
+.carousel-inner img {
+    width: 100%; /* Ajusta el ancho de las imágenes */
+    height: auto; /* Mantiene la proporción de las imágenes */
+    border-radius: 2%;
+
+}
