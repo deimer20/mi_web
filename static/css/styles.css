@@ -6,15 +6,7 @@ body {
     color: #333;
 }
 
-.header2 {
-    color: white;
-    text-align: center;
-    padding: 2rem;
-    position: relative;
-    overflow: hidden;
-    /*border: 2px solid black;  Borde negro */
-    border-radius: 10px; /* Esquinas redondeadas opcionales */
-}
+
 header {
     color: white;
     text-align: center;
@@ -32,8 +24,8 @@ header::before {
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(45deg, #4a90e2, #734ae2, #4ae2a5, #e24a92);
-    background-size: 300% 300%;
+    background: linear-gradient(45deg, #3a8ee2, #3a4ae2, #4ad2e2, #82c1e2);
+    background-size: 40% 40%;
     animation: moveBackground 8s ease-in-out infinite;
     z-index: -1;
     opacity: 0.8;
@@ -233,5 +225,6 @@ li {
     width: 100%; /* Ajusta el ancho de las imágenes */
     height: auto; /* Mantiene la proporción de las imágenes */
     border-radius: 2%;
-
+    padding: 3rem;
 }
+
