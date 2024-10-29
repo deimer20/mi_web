@@ -11,11 +11,11 @@
     <br>
     <header>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-        <div class="profile" style="color: black;">
+        <div class="profile">
             <img src="{{ url_for('static', filename='img/image.png') }}" alt="Foto de perfil">
             <h1>Deimer Alberto Ibarguen Rivas</h1>
-            <p>Licenciado en Educación Física y Deportes - Énfasis Administración Deportiva</p>
-            <p>Tecnólogo en Análisis y Desarrollo de Software</p>          
+           <p>Tecnólogo en Análisis y Desarrollo de Software</p>          
+           <p>Licenciado en Educación Física y Deportes - Énfasis Administración Deportiva</p>
         </div>       
     </header> <br>
 <div style="display: flex; justify-content: center;">
@@ -69,30 +69,33 @@
         <section class="education">
             <h2>Educación</h2>
             <ul>
-                <li><strong>1997-2006</strong> - Primaria y Secundaria, Institución Educativa Heraclio Mena Padilla, Apartadó, Colombia</li>
-                <li><strong>2007-2010</strong> - Secundaria, Colegio Creadores Del Futuro Establecimiento La Pastora, Medellín, Colombia</li>
-                <li><strong>2009-2010</strong> - Media Técnica en Mantenimiento de Computadores y Redes, Colegio Creadores Del Futuro, Medellín, Colombia</li>
-                <li><strong>2011-2017</strong> - Licenciatura en Educación Física y Deportes, Instituto Universitario De Educación Física Y Deportes – U. De Antioquia, Medellín, Colombia</li>
-                <li><strong>2014</strong> - Primeros Auxilios, Instituto Universitario De Educación Física Y Deportes – U. De Antioquia, Medellín, Colombia</li>
-                <li><strong>2018</strong> - Curso de English Dot Works 1 (Inglés), SENA - Regional San Andrés, Colombia</li>
-                <li><strong>2019</strong> - Curso de Pedagogía Humana, SENA - Regional Norte de Santander, Colombia</li>
                 <li><strong>2024</strong> - Tecnólogo en Análisis y Desarrollo de Software, SENA - Sede Principal Medellín, Colombia</li>
+                <li><strong>2019</strong> - Curso de Pedagogía Humana, SENA - Regional Norte de Santander, Colombia</li>
+                <li><strong>2018</strong> - Curso de English Dot Works 1 (Inglés), SENA - Regional San Andrés, Colombia</li>
+                <li><strong>2014</strong> - Primeros Auxilios, Instituto Universitario De Educación Física Y Deportes – U. De Antioquia, Medellín, Colombia</li>
+                <li><strong>2011-2017</strong> - Licenciatura en Educación Física y Deportes, Instituto Universitario De Educación Física Y Deportes – U. De Antioquia, Medellín, Colombia</li>
+                <li><strong>2009-2010</strong> - Media Técnica en Mantenimiento de Computadores y Redes, Colegio Creadores Del Futuro, Medellín, Colombia</li>
+                <li><strong>2007-2010</strong> - Secundaria, Colegio Creadores Del Futuro Establecimiento La Pastora, Medellín, Colombia</li>
+                <li><strong>1997-2006</strong> - Primaria y Secundaria, Institución Educativa Heraclio Mena Padilla, Apartadó, Colombia</li>
             </ul>
+            
         </section>
     
         <section class="courses">
             <h2>Cursos</h2>
             <ul>
-                <li><strong>28 octubre, 2019</strong> - Promoción de la Actividad Física y Estilos de Vida Saludable</li>
-                <li><strong>31 octubre, 2019</strong> - Elementos para la Administración Deportiva</li>
-                <li><strong>13 julio, 2020</strong> - Asesoría para el Uso de las TIC en la Formación</li>
-                <li><strong>20 agosto, 2020</strong> - Hábitos Saludables a partir de la Alimentación y la Actividad Física</li>
-                <li><strong>20 agosto, 2020</strong> - Estructuración de Planes de Entrenamiento Deportivo</li>
-                <li><strong>25 noviembre, 2022</strong> - Curso Introductorio a la Formación Profesional Integral</li>
-                <li><strong>11 septiembre, 2024</strong> - <span class="modal-trigger">Construcción de Bases de Datos con MySQL</span></li>
-                <li><strong>18 octubre, 2024</strong> - Automatización de Procesos para la Eficiencia Organizacional con UiPath</li>
-                <li><strong>15 noviembre, 2024</strong> - Procesos de Soporte Técnico para el Mantenimiento de Equipos de Cómputo (En proceso)</li>
+                <li><strong>15 noviembre, 2024</strong> - <span class="modal-trigger" onclick="openModal('modal1')">Procesos de Soporte Técnico para el Mantenimiento de Equipos de Cómputo (En proceso)</span></li>
+                <li><strong>18 octubre, 2024</strong> - <span class="modal-trigger" onclick="openModal('modal2')">Automatización de Procesos para la Eficiencia Organizacional con UiPath</span></li>
+                <li><strong>11 septiembre, 2024</strong> - <span class="modal-trigger" onclick="openModal('modal3')">Construcción de Bases de Datos con MySQL</span></li>
+                <li><strong>mayo, 2024</strong> - <span class="modal-trigger" onclick="openModal('modal4')">Ciencia de datos</span></li>
+                <li><strong>25 noviembre, 2022</strong> - <span class="modal-trigger" onclick="openModal('modal5')">Curso Introductorio a la Formación Profesional Integral</span></li>
+                <li><strong>20 agosto, 2020</strong> - <span class="modal-trigger" onclick="openModal('modal6')">Estructuración de Planes de Entrenamiento Deportivo</span></li>
+                <li><strong>20 agosto, 2020</strong> - <span class="modal-trigger" onclick="openModal('modal7')">Hábitos Saludables a partir de la Alimentación y la Actividad Física</span></li>
+                <li><strong>13 julio, 2020</strong> - <span class="modal-trigger" onclick="openModal('modal8')">Asesoría para el Uso de las TIC en la Formación</span></li>
+                <li><strong>31 octubre, 2019</strong> - <span class="modal-trigger" onclick="openModal('modal9')">Elementos para la Administración Deportiva</span></li>
+                <li><strong>28 octubre, 2019</strong> - <span class="modal-trigger" onclick="openModal('modal10')">Promoción de la Actividad Física y Estilos de Vida Saludable</span></li>
             </ul>
+            
         </section>
     
         <section class="skills">
@@ -156,44 +159,93 @@
             </div>
         </section>
         
-        
-        
-
-        <!-- Modal -->
-    <div id="myModal" class="modal">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <img src="{{ url_for('static', filename='img/image.png') }}" alt="Descripción de la imagen" style="width:30%; display: block; margin: 0 auto;">
-        </div>
+     <!-- Modales individuales para cada ítem de la lista -->
+<div id="modal1" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('modal1')">&times;</span>
+        <img src="{{ url_for('static', filename='docs/soporte_tecnico.png') }}" alt="Soporte Técnico" style="width:80%; display: block; margin: 0 auto;">
     </div>
+</div>
+
+<div id="modal2" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('modal2')">&times;</span>
+        <img src="{{ url_for('static', filename='docs/uipath.png') }}" alt="UiPath" style="width:80%; display: block; margin: 0 auto;">
+    </div>
+</div>
+
+<div id="modal3" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('modal3')">&times;</span>
+        <img src="{{ url_for('static', filename='docs/sql.png') }}" alt="MySQL" style="width:80%; display: block; margin: 0 auto;">
+    </div>
+</div>
+
+<div id="modal4" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('modal4')">&times;</span>
+        <img src="{{ url_for('static', filename='docs/datos.png') }}" alt="Ciencia de datos" style="width:80%; display: block; margin: 0 auto;">
+    </div>
+</div>
+
+<div id="modal5" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('modal5')">&times;</span>
+        <img src="{{ url_for('static', filename='docs/formacion_integral.png') }}" alt="Formación Integral" style="width:80%; display: block; margin: 0 auto;">
+    </div>
+</div>
+
+<div id="modal6" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('modal6')">&times;</span>
+        <img src="{{ url_for('static', filename='docs/entrenamiento_deportivo.png') }}" alt="Entrenamiento Deportivo" style="width:80%; display: block; margin: 0 auto;">
+    </div>
+</div>
+
+<div id="modal7" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('modal7')">&times;</span>
+        <img src="{{ url_for('static', filename='docs/habitos_saludables.png') }}" alt="Hábitos Saludables" style="width:80%; display: block; margin: 0 auto;">
+    </div>
+</div>
+
+<div id="modal8" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('modal8')">&times;</span>
+        <img src="{{ url_for('static', filename='docs/tic_formacion.png') }}" alt="Uso de las TIC" style="width:80%; display: block; margin: 0 auto;">
+    </div>
+</div>
+
+<div id="modal9" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('modal9')">&times;</span>
+        <img src="{{ url_for('static', filename='docs/administracion_deportiva.png') }}" alt="Administración Deportiva" style="width:80%; display: block; margin: 0 auto;">
+    </div>
+</div>
+
+<div id="modal10" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('modal10')">&times;</span>
+        <img src="{{ url_for('static', filename='docs/actividad_fisica.png') }}" alt="Actividad Física" style="width:80%; display: block; margin: 0 auto;">
+    </div>
+</div>
     </main>
     
     <script>
-        // Obtén el modal
-        var modal = document.getElementById("myModal");
-        
-        // Obtén el elemento que abre el modal
-        var trigger = document.querySelector(".modal-trigger");
-        
-        // Obtén el elemento que cierra el modal
-        var span = document.getElementsByClassName("close")[0];
-        
-        // Cuando se hace clic en el elemento, se abre el modal
-        trigger.onclick = function() {
-            modal.style.display = "block";
+        function openModal(modalId) {
+            document.getElementById(modalId).style.display = "block";
         }
         
-        // Cuando se hace clic en <span> (x), se cierra el modal
-        span.onclick = function() {
-            modal.style.display = "none";
+        function closeModal(modalId) {
+            document.getElementById(modalId).style.display = "none";
         }
         
-        // Cuando se hace clic en cualquier parte fuera del modal, se cierra
+        // Cerrar el modal al hacer clic fuera de él
         window.onclick = function(event) {
-            if (event.target == modal) {
-                modal.style.display = "none";
+            if (event.target.classList.contains('modal')) {
+                event.target.style.display = "none";
             }
-        }
+        };
         </script>
         
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>

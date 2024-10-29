@@ -16,6 +16,7 @@ header {
     /*border: 2px solid black;  Borde negro */
     border-radius: 10px; /* Esquinas redondeadas opcionales */
 }
+  
 
 header::before {
     content: "";
@@ -24,8 +25,8 @@ header::before {
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(45deg, #3a8ee2, #3a4ae2, #4ad2e2, #82c1e2);
-    background-size: 40% 40%;
+    background: radial-gradient(125% 125% at 50% 10%, #63e 40%, rgb(175, 152, 240) 100%);
+    /* background-size: 40% 40%; */
     animation: moveBackground 8s ease-in-out infinite;
     z-index: -1;
     opacity: 0.8;
@@ -119,31 +120,33 @@ li {
 }
 
 .modal {
-    display: none; /* Ocultar el modal por defecto */
-    position: fixed; /* Posicionarlo en la pantalla */
-    z-index: 1; /* Asegurarse de que esté en la parte superior */
+    display: none; /* Oculto por defecto */
+    position: fixed;
+    z-index: 1;
     left: 0;
     top: 0;
-    width: 100%; /* Ancho completo */
-    height: 100%; /* Alto completo */
-    overflow: auto; /* Habilitar scroll si es necesario */
-    background-color: rgb(0,0,0); /* Color de fondo */
-    background-color: rgba(0,0,0,0.4); /* Fondo oscuro con opacidad */
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
 .modal-content {
-    background-color: #fefefe;
-    margin: 15% auto; /* Margen superior e inferior */
+    position: relative;
+    margin: auto;
     padding: 20px;
-    border: 1px solid #888;
-    width: 80%; /* Ancho del contenido */
+    width: 90%;
+    max-width: 500px;
 }
 
 .close {
-    color: #aaa;
-    float: right; /* Alinear a la derecha */
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    color: #ffffff;
     font-size: 28px;
     font-weight: bold;
+    cursor: pointer;
 }
 
 .close:hover,
